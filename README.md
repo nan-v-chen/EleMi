@@ -22,7 +22,7 @@ EleMi requires Python to run. If you don't have Python installed, you can instal
    ```
 
 **Option b: Install via Anaconda (Recommended for beginners)**
-1. Download and install Anaconda from: https://www.anaconda.com/products/distribution.
+1. Download and install Anaconda from: https://www.anaconda.com/download/success.
 2. After installation, open a terminal (or Anaconda Prompt) and create a new environment with Python:
    ```sh
    conda create -n py385 python=3.8.5
