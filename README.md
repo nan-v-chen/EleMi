@@ -6,7 +6,7 @@ EleMi is used to infer soil ecological networks using abundance data.
 
 ## 1. Installation
 
-### 1. Install Python
+### 1) Install Python
 EleMi requires Python to run. If you don't have Python installed, you can install it in one of the following ways:
 
 **Option a: Install from python.org**
@@ -29,7 +29,7 @@ EleMi requires Python to run. If you don't have Python installed, you can instal
    conda activate py385
    ```
 
-### 2. Install required dependencies
+### 2) Install required dependencies
    EleMi depends on [NumPy](https://numpy.org/). Please make sure it is installed before running the code.
    To install NumPy, run the following command:
    ```sh
