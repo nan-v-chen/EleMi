@@ -33,19 +33,22 @@ EleMi requires Python to run. If you don't have Python installed, you can instal
    EleMi depends on [NumPy](https://numpy.org/). Please make sure it is installed before running the code.
    To install NumPy, run the following command:
    ```sh
-   pip install numpy
+   pip install numpy pandas
    ```
 
    Alternatively, if you are using Anaconda:
    ```sh
-   conda install numpy
+   conda install numpy pandas
    ```
 
 ## 2. Usage
-
-```
+EleMi takes as input an abundance matrix shaped like n × p where n is the number of samples and p is the number of taxa.
+```python
 from EleMi import EleMi, row_clr, col_normalize
+import pandas as pd
 
+data = pd.read_csv("example_data/otu.csv", index_col=0)
+data = data.astype(float).values
 
 data = row_clr(data)
 data = col_normalize(data)
