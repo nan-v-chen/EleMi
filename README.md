@@ -5,8 +5,6 @@ Elastic net regularized multi-regression (https://link.springer.com/chapter/10.1
 EleMi is used to infer soil ecological networks using abundance data.
 
 ## 1. Installation
-1. **Install required dependencies in Python**
-   
    EleMi depends on [NumPy](https://numpy.org/). Please make sure it is installed before running the code.
    To install NumPy, run the following command:
    ```sh
