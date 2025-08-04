@@ -7,13 +7,6 @@
 """
 
 import numpy as np
-import logging
-
-
-# use logging module for easy debug
-logging.basicConfig(format='%(asctime)s %(levelname)8s: %(message)s', datefmt='%m-%d %H:%M:%S')
-logger = logging.getLogger(__name__)
-logger.setLevel('DEBUG')
 
 
 def S(alpha, v):
@@ -111,6 +104,7 @@ def col_normalize(X):
     :param X:
     :return:
     """
-    for col_id in range(X.shape[1]):
-        X[:, col_id] = X[:, col_id] / np.linalg.norm(X[:, col_id])
-    return X
+    X_normalized = X.copy()
+    for col_id in range(X_normalized.shape[1]):
+        X_normalized[:, col_id] = X_normalized[:, col_id] / np.linalg.norm(X_normalized[:, col_id])
+    return X_normalized
