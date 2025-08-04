@@ -42,7 +42,7 @@ EleMi requires Python to run. If you don't have Python installed, you can instal
    ```
 
 ## 2. Usage
-EleMi takes as input an abundance matrix shaped like n × p where n is the number of samples and p is the number of taxa.
+EleMi takes as input an abundance matrix shaped like n × p where n is the number of samples and p is the number of taxa. You can find an example in [example_data/otu.csv](https://github.com/nan-v-chen/EleMi/tree/master/example_data).
 ```python
 from EleMi import EleMi, row_clr, col_normalize
 import pandas as pd
