@@ -5,6 +5,31 @@ Elastic net regularized multi-regression (https://link.springer.com/chapter/10.1
 EleMi is used to infer soil ecological networks using abundance data.
 
 ## 1. Installation
+
+### a) Install Python
+EleMi requires Python to run. If you don't have Python installed, you can install it in one of the following ways:
+
+**Option 1: Install from python.org**
+1. Download Python (we recommend version 3.8.5) from the official website: https://www.python.org/downloads/.
+2. During installation, make sure to check the box that says "Add Python to PATH".
+3. After installation, you can verify that Python is installed by running:
+   ```sh
+   python --version
+   ```
+   or
+   ```sh
+   python3 --version
+   ```
+
+**Option 2: Install via Anaconda (Recommended for beginners)**
+1. Download and install Anaconda from: https://www.anaconda.com/products/distribution.
+2. After installation, open a terminal (or Anaconda Prompt) and create a new environment with Python:
+   ```sh
+   conda create -n py385 python=3.8.5
+   conda activate py385
+   ```
+
+### b) Install required dependencies
    EleMi depends on [NumPy](https://numpy.org/). Please make sure it is installed before running the code.
    To install NumPy, run the following command:
    ```sh
