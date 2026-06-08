@@ -10,7 +10,20 @@ EleMi is used to infer soil ecological networks using abundance data.
 pip install elemi
 ```
 
-## 2. Usage
+## 2. Functions and Parameters
+### `EleMi(X, miu1, miu2)`
+#### Parameters
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `X` | ndarray | Input abundance matrix of shape `(n_samples, n_taxa)`. |
+| `miu1` | float | L1 regularization parameter controlling network sparsity. |
+| `miu2` | float | L2 regularization parameter controlling coefficient shrinkage. |
+#### Returns
+| Return | Type | Description |
+|---------|------|-------------|
+| `A` | ndarray | Estimated adjacency matrix. |
+
+## 3. Usage
 EleMi takes as input an abundance matrix shaped like n × p where n is the number of samples and p is the number of taxa. You can find an example dataset in [example_data/otu.csv](https://github.com/nan-v-chen/EleMi/tree/master/example_data).
 ```python
 from elemi import EleMi, row_clr, col_normalize
